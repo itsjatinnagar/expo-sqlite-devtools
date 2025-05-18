@@ -1,7 +1,7 @@
 {
   "name": "expo-sqlite-devtools",
   "version": "0.0.1",
-  "description": "A new DevTools plugin created by create-dev-plugin",
+  "description": "An Expo DevTools Plugin for Expo SQLite",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "sideEffects": false,
@@ -25,6 +25,7 @@
     "expo-module.config.json"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/itsjatinnagar/expo-sqlite-devtools?tab=readme-ov-file#expo-sqlite-dev-plugin",
   "dependencies": {
     "expo-sqlite": "^15.0.3"
   },
