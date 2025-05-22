@@ -1,4 +1,5 @@
 # Expo SQLite Dev Plugin
+![expo-sqlite-devtools](https://github.com/user-attachments/assets/3c6b4086-d2a4-48dd-a861-9fabf460efd8)
 
 An Expo SQLite DevTool that can run in an Expo App.
 
