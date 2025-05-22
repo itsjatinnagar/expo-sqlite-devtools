@@ -35,6 +35,24 @@ export default function App() {
   }>(null);
 
   useEffect(() => {
+    const preconnect = document.createElement("link");
+    preconnect.rel = "preconnect";
+    preconnect.href = "https://fonts.googleapis.com";
+    document.head.appendChild(preconnect);
+
+    const preconnectOrigin = document.createElement("link");
+    preconnectOrigin.rel = "preconnect";
+    preconnectOrigin.href = "https://fonts.gstatic.com";
+    preconnectOrigin.crossOrigin = "true";
+    document.head.appendChild(preconnectOrigin);
+
+    const fontLink = document.createElement("link");
+    fontLink.rel = "stylesheet";
+    fontLink.href = `https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap`;
+    document.head.appendChild(fontLink);
+  }, []);
+
+  useEffect(() => {
     if (client) {
       window.client = client;
       studioFunction(React, ReactDOM, ReactDOMClient);
