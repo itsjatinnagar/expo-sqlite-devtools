@@ -1,6 +1,6 @@
 {
   "name": "expo-sqlite-devtools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Expo DevTools Plugin for Expo SQLite",
   "main": "build/index.js",
   "types": "build/index.d.ts",
