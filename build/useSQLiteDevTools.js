@@ -1,6 +1,6 @@
 import { useDevToolsPluginClient } from "expo/devtools";
 import { useEffect } from "react";
-export default function useSQLiteDevTools(db) {
+export function useSQLiteDevTools(db) {
     const client = useDevToolsPluginClient("expo-sqlite-devtools");
     const transferData = async (e) => {
         if (!db)

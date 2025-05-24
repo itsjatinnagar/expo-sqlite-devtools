@@ -1,3 +1,3 @@
 import * as SQLite from "expo-sqlite";
-export default function useSQLiteDevTools(db: SQLite.SQLiteDatabase | null): void;
+export declare function useSQLiteDevTools(db: SQLite.SQLiteDatabase): void;
 //# sourceMappingURL=useSQLiteDevTools.d.ts.map

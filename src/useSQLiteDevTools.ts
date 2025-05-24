@@ -1,8 +1,8 @@
 import * as SQLite from "expo-sqlite";
-import { useDevToolsPluginClient } from "expo/devtools";
+import { useDevToolsPluginClient, type EventSubscription } from "expo/devtools";
 import { useEffect } from "react";
 
-export default function useSQLiteDevTools(db: SQLite.SQLiteDatabase | null) {
+export function useSQLiteDevTools(db: SQLite.SQLiteDatabase) {
   const client = useDevToolsPluginClient("expo-sqlite-devtools");
 
   const transferData = async (e: {
@@ -29,7 +29,7 @@ export default function useSQLiteDevTools(db: SQLite.SQLiteDatabase | null) {
   };
 
   useEffect(() => {
-    const subscriptions: any[] = [];
+    const subscriptions: (EventSubscription | undefined)[] = [];
 
     subscriptions.push(client?.addMessageListener("getData", transferData));
 
